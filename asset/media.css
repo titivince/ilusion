@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+    #mainBackground {
+        max-height: 50vh;
+    }
+    #mainPicture {
+        max-height: 50vh;
+    }
+    #midleSection, #topSection, #bottomSection {
+        flex-direction: column;
+    }
+    .w-80, .w-60, .w-50, .w-40, .w-20 {
+        width: 95%;
+    }
+    #leftSection-1 img {
+        max-width: 100vw;
+    }
+}
