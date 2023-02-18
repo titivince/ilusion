@@ -1,49 +1,105 @@
-.purple-box {
-    height: 600px;
-    background-color: blueviolet;
-}
-.green-box {
-    height: 200px;
-    background-color: green;
-}
 .blue-text {
-    color: #3287b9;
+  color: #3287b9;
 }
 #mainBackground {
-    height: 100vh;
-    overflow:hidden;
+  height: 100vh;
+  overflow:hidden;
 }
 #mainPicture{
-    max-width: 100vw;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
+  z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+#blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
 }
 nav {
-    position: absolute;
-    z-index: 100;
-    top: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
 }
-#nav-0 img {
-    width: 100px;
-    height: 100px;
+.load {
+  background: rgba(255, 255, 255, 0.6);
+}
+#nav-0{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 #nav-1 ,#nav-2 ,#nav-3 {
-    height: min-content;
+  height: min-content;
 }
-#nav-0:hover ,#nav-1:hover ,#nav-2:hover ,#nav-3:hover {
-    cursor: pointer;
+#nav-0:hover ,#nav-1:hover ,#nav-2:hover ,#nav-3:hover,#concept:hover ,#price-menu:hover {
+  cursor: pointer;
+}
+.container {
+  background: dodgerblue;
+  padding: 10px;
+  height: 40px;
+  position: relative;
+  left: 0;
+}
+#burger {
+  width: 40px;
+  height: 40px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#burger span:nth-child(1) {
+  top: 6px;
+}
+#burger span:nth-child(2) {
+  top: 18px;
+}
+#burger span:nth-child(3) {
+  top: 30px;
+}
+#burger.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+#burger.open span:nth-child(2) {
+  opacity: 0;
+}
+#burger.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+#concept ,#price-menu {
+  text-decoration: none;
+  border: solid;
+  border-width: 2px 0 0 2px;
+  border-color: #3287b9;
+  border-radius: .4em 0;
 }
 #response {
-    color: rgb(101, 238, 101);
+  color: rgb(101, 238, 101);
 }
 input[type="button"] {
-    background-color: #3287b9;
-    border-radius: .4em;
-    border-width: 0px;
+  background-color: #3287b9;
+  border-radius: .4em;
+  border-width: 0px;
 }
