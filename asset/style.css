@@ -15,14 +15,6 @@
   left: 50%;
   transform:translate(-50%,-50%);
 }
-#blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99;
-}
 nav {
   position: fixed;
   z-index: 100;
@@ -34,12 +26,15 @@ nav {
 #nav-0{
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
-#nav-1 ,#nav-2 ,#nav-3 {
+a {
+  text-decoration: none;
+}
+#nav-1, #nav-2, #nav-3, #nav-4 {
   height: min-content;
 }
-#nav-0:hover ,#nav-1:hover ,#nav-2:hover ,#nav-3:hover,#concept:hover ,#price-menu:hover {
+#nav-0:hover ,#nav-1:hover ,#nav-2:hover ,#nav-3:hover ,#nav-3:hover, #concept:hover ,#price-menu:hover {
   cursor: pointer;
 }
 .container {
@@ -89,14 +84,23 @@ nav {
   transform: rotate(-135deg);
 }
 #concept ,#price-menu {
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
   border: solid;
-  border-width: 2px 0 0 2px;
   border-color: #3287b9;
-  border-radius: .4em 0;
+}
+#concept {
+  border-width: 2px 2px 0 0;
+  border-radius: 0 .4em 0 0;
+}
+#price-menu {
+  border-width: 2px 0 0 2px;
+  border-radius: .4em 0 0 0;
 }
 #response {
   color: rgb(101, 238, 101);
+}
+#reservation {
+  width: 165px;
 }
 input[type="button"] {
   background-color: #3287b9;
