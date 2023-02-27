@@ -56,5 +56,7 @@ btn2.addEventListener("click", scrollToMidleSection);
 btn3.addEventListener("click", scrollToBottomSection);
 btn4.addEventListener("click", scrollToFooter);
 
-reservation.addEventListener("click", reserved);
+if ( response != null ) {
+    reservation.addEventListener("click", reserved);
+}
 }

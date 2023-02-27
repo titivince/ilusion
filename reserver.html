@@ -1,0 +1,61 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/mainClass.css">
+    <link rel="stylesheet" href="asset/media.css">
+    <script src="asset/script.js"></script>
+    <title>Ilusion</title>
+</head>
+<body>
+    <section class="d-flex center column">
+            <div id="nav-0" class="d-flex space-between w-100">
+                <a id="concept" class="padding-all blue-text" href="https://forms.gle/CkfWn2qoVSExNEsu9" target="_blank">Formulaire concept</a>
+                <a id="price-menu" class="padding-all blue-text" href="https://docs.google.com/forms/d/e/1FAIpQLSdcpwJZOzJ_bu_0Vbq_02owhXlfCm23iriO2zoio0xE0jPAvw/viewform?fbclid=PAAaZ4OXwIUPJM9X5xoiV0tPkl6In7R-4v9G44VR7kvQMFRlXmJMkTJg5RUNg" target="_blank">Formulaire prix du menu</a>
+            </div>
+            <nav class="d-flex w-100 background-none">
+                <div class="d-flex w-100 space-between">
+                    <div class="container">
+                        <div id="burger">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                       </div>
+                    </div>
+                    <div id="nav" class="d-flex w-100 space-around center d-none">
+                        <a id="nav-1" class="padding-all background-none blue-text" href="index.html"><h2>Acceuil</h2></a>
+                        <a id="nav-2" class="padding-all background-none blue-text" href="index.html"><h2>Menu</h2></a>
+                        <a id="nav-3" class="padding-all background-none blue-text" href="index.html"><h2>Notre équipe</h2></a>
+                        <a id="nav-4" class="padding-all background-none blue-text" href="reserver.html"><h2>Réservation</h2></a>
+                    </div>
+                </div>
+            </nav>
+        <section id="mainBackground" class="d-flex center wrap w-100">
+            <div id="leftSection-0" class="d-flex column center w-40">
+                <h2 class="padding-tb blue-text">Nous retrouver</h2>
+                <h4 class="padding-tb blue-text">Adresse : A venir</h4>
+                <h4 class="padding-tb blue-text">Ouvert du Lundi midi au samedi Soir</h4>
+            </div>
+            <div id="rightSection-0" class="d-flex center column w-60">
+                <h2 id="title" class="margin-b blue-text">Pour réserver</h2>
+                <form class="d-flex column">
+                    <h3 id="response" class="d-none">Votre réservation a bien été prise en compte</h3>
+                    <i class="padding-all">* Obligatoire</i>
+                    <label class="padding-all" for="Name">* Nom
+                        <input class="margin-all padding-tb" type="text" placeholder="Nom" minlength="2" required>
+                    </label>
+                    <label class="padding-all" for="date">* Date
+                        <input class="margin-all padding-tb" type="date" required>
+                    </label>
+                    <label class="padding-all" for="number">* Pour combien de personne
+                        <input class="margin-all padding-tb" type="number" maxlength="2" required>
+                    </label>
+                    <div class="d-flex center w-100">
+                        <input class="padding-tb" id="reservation" type="button" value="Réserver">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
